@@ -1,0 +1,149 @@
+@import '_color'
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border: none
+	outline: none
+	text-decoration: none
+	list-style: none
+	font-family: 'Futura PT'
+	font-weight: 500
+    font-style: normal
+	color: #fff
+	z-index: 2
+	
+
+html
+	font-size: 18px
+body
+	background: #16191C
+section
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.container
+	width: 63vw
+	max-width: 1170px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.header
+	position: relative
+	padding-top: 15.56rem
+	padding-bottom: 16.34rem
+	overflow: hidden
+	&_menu
+		@extend section
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		padding: 17px 0
+		backdrop-filter: blur(10px)
+		background: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%)
+		border: 1px solid
+		border-image-source: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%)
+		border-radius: 10px
+		z-index: 3
+		&_link
+			font-size: 1.222rem
+			font-weight: 300
+			margin-left: 1.5rem
+			&:hover
+				margin-left: 0.75rem
+				padding: 5px
+				border: 1px solid #E7B894
+				border-radius: 200px
+
+
+	&_block
+		&_text
+			&::before
+				content: ""
+				position: absolute
+				top: 520px
+				right: 0
+				height: 641px
+				width: 63px
+				background: url("../img/header/Ellipse 87.png")
+			&::after
+				content: ""
+				position: absolute
+				left: 0
+				bottom: 0
+				height: 550px
+				width: 100vw
+				background: url("../img/header/Chair.png")				
+			&_title
+				font-size: 2.11rem
+				font-weight: 500
+				line-height: 3rem
+			&_subtitle
+				margin-top: 3.3rem
+				padding-right: 2rem
+				font-size: 1.46rem
+				font-weight: 300
+				line-height: 1.78rem
+			&_btn
+				position: relative
+				margin-top: 3.3rem
+				font-size: 1.22rem
+				padding: 1.2rem 3.27rem
+				background: $btn
+				border-radius: 10px
+				&:hover
+					background: lighten($btn, 12%)
+				&::after
+					content: "Начни играть по-крупному"
+					position: absolute
+					top: 50%
+					right: -100%
+					transform: translateY(-50%)
+					font-size: 1.2rem
+					font-weight: 300
+				&::before
+					content: ""
+					position: absolute
+					top: 90%
+					right: -94%
+					background: url("../img/header/Vector 14.png") no-repeat
+					height: 100%
+					width: 100%
+		&::after
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 100%
+			width: 1208px
+			background: url("../img/header/BackLines_Mainscreen.png") no-repeat
+		&::before
+			content: ""
+			position: absolute
+			top: calc(50% - -100px)
+			left: 50%
+			transform: translate(-50%, -50%) 
+			height: 1336px
+			width: 1548px
+			background: url("../img/header/Mask Group.png") no-repeat	
+	&::before
+		content: ""
+		position: absolute
+		height: 100%
+		width: 472px
+		bottom: 0
+		left: 0
+		background: url("../img/header/GraphicLines_left.png") no-repeat
+	&::after
+		content: ""
+		position: absolute
+		height: 100%
+		width: 186px
+		top: 0
+		right: 0
+		background: url("../img/header/Line_dec2.png") no-repeat
