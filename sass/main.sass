@@ -234,8 +234,10 @@ section
 			top: 60%
 			left: 0
 			height: 139.23rem
-			width: 100vw
+			width: 98.7vw
 			background: url("../img/offer/Background1.png") no-repeat
+			background-size: 100%
+			z-index: 1
 	&_block
 		flex-basis: 32%
 		&_wrap
@@ -262,6 +264,50 @@ section
 			margin-top: 1.4rem
 			font-size: 1.1rem
 
+.warranty
+	position: relative
+	padding-top: 4.1rem
+	padding-bottom: 2.722rem
+	&::before
+		content: ""
+		position: absolute
+		right: 0
+		bottom: 0
+		height: 380px
+		width: 113px
+		background: url("../img/warranty/Vector 53.png")
+	& .container
+		flex-direction: column
+	&_block
+		display: flex
+		flex-basis: 40%
+		justify-content: end
+		margin: 0.6944rem 0
+		&_wrap
+			display: flex
+			align-content: start
+			flex-flow: wrap
+			justify-content: center
+			background: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%)
+			backdrop-filter: blur(40px)
+			border-radius: 10px 0px 0px 10px
+			margin-top: 5.5rem
+			padding: 4.4rem 0
+		&_text
+			position: relative
+			font-size: 1.11rem
+			width: 17.7rem
+			&::before
+				content: ""
+				position: absolute
+				top: 50%
+				left: -37px
+				transform: translateY(-50%)
+				height: 25px
+				width: 25px
+				background: url("../img/warranty/fi-rr-badge.png")
+	&_title
+		font-size: 2.33rem
 
 
 

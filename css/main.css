@@ -339,8 +339,10 @@ section, .header_menu {
   top: 60%;
   left: 0;
   height: 139.23rem;
-  width: 100vw;
+  width: 98.7vw;
   background: url("../img/offer/Background1.png") no-repeat;
+  background-size: 100%;
+  z-index: 1;
 }
 
 .offer_block {
@@ -377,6 +379,82 @@ section, .header_menu {
 .offer_block_text {
   margin-top: 1.4rem;
   font-size: 1.1rem;
+}
+
+.warranty {
+  position: relative;
+  padding-top: 4.1rem;
+  padding-bottom: 2.722rem;
+}
+
+.warranty::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 380px;
+  width: 113px;
+  background: url("../img/warranty/Vector 53.png");
+}
+
+.warranty .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.warranty_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0.6944rem 0;
+}
+
+.warranty_block_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 10px 0px 0px 10px;
+  margin-top: 5.5rem;
+  padding: 4.4rem 0;
+}
+
+.warranty_block_text {
+  position: relative;
+  font-size: 1.11rem;
+  width: 17.7rem;
+}
+
+.warranty_block_text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -37px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: url("../img/warranty/fi-rr-badge.png");
+}
+
+.warranty_title {
+  font-size: 2.33rem;
 }
 
 @media (min-width: 992px) {
