@@ -10,7 +10,7 @@
   list-style: none;
   font-family: 'Futura PT';
   font-weight: 500;
-  font-weight-font-style: normal;
+  font-style: normal;
   color: #fff;
   z-index: 2;
 }
@@ -53,6 +53,34 @@ section, .header_menu {
           align-items: center;
 }
 
+.lain {
+  position: relative;
+}
+
+.lain::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  height: 65px;
+  width: 1px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background: #747576;
+}
+
+.lain::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  height: 65px;
+  width: 1px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background: #747576;
+}
+
 .header {
   position: relative;
   padding-top: 15.56rem;
@@ -81,13 +109,6 @@ section, .header_menu {
   margin-left: 1.5rem;
 }
 
-.header_menu_link:hover {
-  margin-left: 0.75rem;
-  padding: 5px;
-  border: 1px solid #E7B894;
-  border-radius: 200px;
-}
-
 .header_block_text::before {
   content: "";
   position: absolute;
@@ -96,16 +117,6 @@ section, .header_menu {
   height: 641px;
   width: 63px;
   background: url("../img/header/Ellipse 87.png");
-}
-
-.header_block_text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 550px;
-  width: 100vw;
-  background: url("../img/header/Chair.png");
 }
 
 .header_block_text_title {
@@ -129,10 +140,6 @@ section, .header_menu {
   padding: 1.2rem 3.27rem;
   background: #DD782F;
   border-radius: 10px;
-}
-
-.header_block_text_btn:hover {
-  background: #e69a64;
 }
 
 .header_block_text_btn::after {
@@ -198,5 +205,220 @@ section, .header_menu {
   top: 0;
   right: 0;
   background: url("../img/header/Line_dec2.png") no-repeat;
+}
+
+.cta {
+  position: relative;
+  padding: 3.778rem 0;
+  background: linear-gradient(122.61deg, rgba(252, 254, 255, 0.3) 30.49%, rgba(252, 254, 255, 0.1) 74.05%);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+
+.cta_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2.78rem;
+}
+
+.cta .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cta_title {
+  font-size: 2rem;
+}
+
+.cta_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.cta_text {
+  margin-top: 1.7rem;
+  font-size: 1.1111rem;
+  font-weight: 300;
+  line-height: 1.7778rem;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 308px;
+  width: 150px;
+  background: url("../img/cta/Lines_dec1.png") no-repeat;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 257px;
+  width: 125px;
+  background: url("../img/cta/Group 73.png") no-repeat;
+}
+
+.offer {
+  position: relative;
+  padding-top: 8.3rem;
+  padding-bottom: 4.1rem;
+}
+
+.offer::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  height: 380px;
+  width: 141px;
+  background: url("../img/offer/Lines_dec.png") no-repeat;
+}
+
+.offer::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  height: 411px;
+  width: 132px;
+  background: url("../img/offer/Elipse1.png") no-repeat;
+}
+
+.offer .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer_title {
+  font-size: 2.333rem;
+}
+
+.offer_wrap {
+  margin-top: 5.55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer_wrap::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 139.23rem;
+  width: 100vw;
+  background: url("../img/offer/Background1.png") no-repeat;
+}
+
+.offer_block {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.offer_block_wrap {
+  background: #1C1F21;
+  border-radius: 10px;
+  padding: 1.67rem;
+  padding-bottom: 5.6rem;
+  min-height: 26.38rem;
+}
+
+.offer_block_img {
+  height: 4.44rem;
+  width: 4.44rem;
+  background: #FDBB59;
+  background-image: url("../img/offer/checked pas.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.offer_block_title {
+  margin-top: 1.83rem;
+  min-height: 3.83rem;
+  font-size: 1.6667rem;
+  color: #FDBB59;
+  text-align: center;
+}
+
+.offer_block_text {
+  margin-top: 1.4rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 992px) {
+  .header_menu_link:hover {
+    margin-left: 0.75rem;
+    padding: 5px;
+    border: 1px solid #E7B894;
+    border-radius: 200px;
+  }
+  .header_block_text_btn:hover {
+    background: #e69a64;
+  }
+  .offer_block {
+    position: relative;
+  }
+  .offer_block_line {
+    display: none;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -0.61rem;
+    right: -0.61rem;
+    border: 1px solid #FDBB59;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .offer_block:hover .offer_block_wrap {
+    background: linear-gradient(160.16deg, #FDBB59 18.04%, #F4A939 94.59%);
+  }
+  .offer_block:hover .offer_block_img {
+    background: #1C1F21;
+    background-image: url("../img/offer/checked activ.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+  }
+  .offer_block:hover .offer_block_title {
+    color: #16191C;
+  }
+  .offer_block:hover .offer_block_line {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

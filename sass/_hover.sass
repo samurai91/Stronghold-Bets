@@ -1,0 +1,43 @@
+@media (min-width: 992px)
+	.header
+		&_menu
+			&_link
+				&:hover
+					margin-left: 0.75rem
+					padding: 5px
+					border: 1px solid #E7B894
+					border-radius: 200px
+		&_block
+			&_text
+				&_btn
+					&:hover
+						background: lighten($btn, 12%)
+
+	.offer
+		&_block
+			position: relative
+			&_line
+				display: none
+				content: ""
+				position: absolute
+				height: 100%
+				width: 100%
+				top: -0.61rem
+				right: -0.61rem
+				border: 1px solid #FDBB59
+				border-radius: 10px		
+				z-index: -1
+			&:hover &_wrap
+				background: linear-gradient(160.16deg, #FDBB59 18.04%, #F4A939 94.59%)
+			&:hover &_img
+				background: #1C1F21
+				background-image: url("../img/offer/checked activ.png")
+				background-repeat: no-repeat
+				background-position: center center
+				border-radius: 10px
+			&:hover &_title
+				color: #16191C
+			&:hover &_line
+				display: block
+				
+
