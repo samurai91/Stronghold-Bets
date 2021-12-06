@@ -53,6 +53,10 @@ section, .header_menu {
           align-items: center;
 }
 
+.transfer {
+  display: block;
+}
+
 .lain {
   position: relative;
 }
@@ -338,7 +342,7 @@ section, .header_menu {
   position: absolute;
   top: 60%;
   left: 0;
-  height: 139.23rem;
+  height: 73.72rem;
   width: 98.7vw;
   background: url("../img/offer/Background1.png") no-repeat;
   background-size: 100%;
@@ -455,6 +459,143 @@ section, .header_menu {
 
 .warranty_title {
   font-size: 2.33rem;
+}
+
+.vip {
+  position: relative;
+  display: block;
+  padding-top: 5rem;
+  padding-bottom: 13.5rem;
+  z-index: 2;
+}
+
+.vip::before {
+  content: "";
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1168px;
+  width: 1801px;
+  background: url("../img/vip/Lines_dec_background3.png") no-repeat;
+}
+
+.vip::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 403px;
+  width: 109px;
+  background: url("../img/vip/Vector 63.png") no-repeat;
+}
+
+.vip_title {
+  font-size: 2.3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.vip_title::before {
+  content: "";
+  position: absolute;
+  top: -1.77rem;
+  left: 0;
+  height: 314px;
+  width: 137px;
+  background: url("../img/vip/Line_dec2.png") no-repeat;
+}
+
+.vip_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.83rem;
+}
+
+.vip_block_china {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.vip_block_china_text {
+  margin-right: 7.2778rem;
+}
+
+.vip_block_china_text::before {
+  right: calc(-1.22rem + -24px);
+}
+
+.vip_block_china_img_wrap {
+  margin-right: 16px;
+}
+
+.vip_block_italy {
+  position: relative;
+}
+
+.vip_block_italy_text {
+  margin-left: 7.2778rem;
+}
+
+.vip_block_italy_text::before {
+  left: calc(-1.22rem + -24px);
+}
+
+.vip_block_italy::before {
+  content: "";
+  position: absolute;
+  top: -72%;
+  left: 0;
+  height: 467px;
+  width: 161px;
+  background: url("../img/vip/Elipse_dec3.png") no-repeat;
+}
+
+.vip_block_wrap {
+  margin-top: 5.8rem;
+}
+
+.vip_block_img {
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.vip_block_img_wrap {
+  position: relative;
+}
+
+.vip_block_img_wrap::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -16px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #FDBB59;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.vip_block_text {
+  position: relative;
+  font-size: 2.16rem;
+}
+
+.vip_block_text::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #FBB659;
 }
 
 @media (min-width: 992px) {
