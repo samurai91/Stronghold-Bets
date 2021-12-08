@@ -403,20 +403,48 @@ section
 				transform: translateY(-50%)
 				background: #FBB659
 
-.partner
-	padding: 0.5rem 0
-
-	&_img
-		&_wrap
-			margin: 2.1rem 0.5rem
-	&_wrap
+.feedback
+	padding-top: 5.14rem
+	padding-bottom: 9.1rem
+	&_title
+		font-size: 2.3rem
+	&_form
 		display: flex
-		flex-flow: wrap
 		justify-content: space-around
 		align-items: center
+		width: 85%
+		margin-left: 1.7rem
+		&_wrap
+			display: flex
+			justify-content: center
+			width: 100%
+			margin-top: 2.8rem
+		&_link
+			position: relative
+			font-size: 1.3rem
+			&::before
+				content: ""
+				position: absolute
+				top: 10%
+				left: -20%
+				height: 24px
+				width: 24px
+				background: url("../img/feedback/01 align center.png") no-repeat
 
-
-
+		&_email
+			height: 3.27rem
+			width: 16.38rem
+			padding-left: 1.27rem
+			font-size: 0.88rem
+			border: 1px solid #848889
+			box-sizing: border-box
+			border-radius: 10px
+			background: transparent
+		&_btn
+			padding: 1rem 3.8rem
+			font-size: 1.22rem
+			background: $btn
+			border-radius: 10px
 
 
 

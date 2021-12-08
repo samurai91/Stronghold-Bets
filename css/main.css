@@ -598,6 +598,73 @@ section, .header_menu {
   background: #FBB659;
 }
 
+.feedback {
+  padding-top: 5.14rem;
+  padding-bottom: 9.1rem;
+}
+
+.feedback_title {
+  font-size: 2.3rem;
+}
+
+.feedback_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin-left: 1.7rem;
+}
+
+.feedback_form_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2.8rem;
+}
+
+.feedback_form_link {
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.feedback_form_link::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  height: 24px;
+  width: 24px;
+  background: url("../img/feedback/01 align center.png") no-repeat;
+}
+
+.feedback_form_email {
+  height: 3.27rem;
+  width: 16.38rem;
+  padding-left: 1.27rem;
+  font-size: 0.88rem;
+  border: 1px solid #848889;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.feedback_form_btn {
+  padding: 1rem 3.8rem;
+  font-size: 1.22rem;
+  background: #DD782F;
+  border-radius: 10px;
+}
+
 @media (min-width: 992px) {
   .header_menu_link:hover {
     margin-left: 0.75rem;
@@ -638,6 +705,9 @@ section, .header_menu {
   }
   .offer_block:hover .offer_block_line {
     display: block;
+  }
+  .feedback_form_btn:hover {
+    background: #e69a64;
   }
 }
 /*# sourceMappingURL=main.css.map */
