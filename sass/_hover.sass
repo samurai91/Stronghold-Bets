@@ -45,6 +45,23 @@
 			&_btn
 				&:hover
 					background: $btn_hover
+
+	.footer
+		&_link
+			&::before
+				content: ""
+				position: absolute
+				left: 0
+				bottom: 0
+				height: 1px
+				width: 100%
+				background: #FDBB59
+				transition: 0.2s
+				transform: scale(0)
+			&:hover
+				&::before
+					transform: scale(1)
+			
 					
 				
 

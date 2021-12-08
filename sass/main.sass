@@ -446,6 +446,42 @@ section
 			background: $btn
 			border-radius: 10px
 
+.footer
+	position: relative
+	padding-top: 2.5rem
+	padding-bottom: 1.83rem
+	&::before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 198px
+		width: 239px
+		background: url("../img/footer/Elipse_left.png") no-repeat
+	&::after
+		content: ""
+		position: absolute
+		bottom: 30px
+		right: 0
+		height: 421px
+		width: 114px
+		background: url("../img/footer/Elipse_right.png") no-repeat
+	&_copy
+		font-size: 1.111rem
+		&::before
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 1px
+			width: 65rem
+			background: #2E2E2E
+	&_link
+		position: relative
+		font-size: 1.111rem
+		color: $btn_hover
+		
 
 
 

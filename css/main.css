@@ -665,6 +665,54 @@ section, .header_menu {
   border-radius: 10px;
 }
 
+.footer {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 1.83rem;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 198px;
+  width: 239px;
+  background: url("../img/footer/Elipse_left.png") no-repeat;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  height: 421px;
+  width: 114px;
+  background: url("../img/footer/Elipse_right.png") no-repeat;
+}
+
+.footer_copy {
+  font-size: 1.111rem;
+}
+
+.footer_copy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 65rem;
+  background: #2E2E2E;
+}
+
+.footer_link {
+  position: relative;
+  font-size: 1.111rem;
+  color: #e69a64;
+}
+
 @media (min-width: 992px) {
   .header_menu_link:hover {
     margin-left: 0.75rem;
@@ -708,6 +756,23 @@ section, .header_menu {
   }
   .feedback_form_btn:hover {
     background: #e69a64;
+  }
+  .footer_link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #FDBB59;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .footer_link:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=main.css.map */
