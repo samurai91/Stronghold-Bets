@@ -5,6 +5,10 @@ $(document).ready(function(){
       jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
       return false;
     });
+    $('.popup_close').on('click', function (events) {
+      event.preventDefault();
+      $('.popup').fadeOut();
+    });
   });
 $('form').submit(function(event) {
 	event.preventDefault();
@@ -14,7 +18,7 @@ $('form').submit(function(event) {
 		data: $(this).serialize()
 	}).done(function() {
 		$(this).find("input").val("");
-		alert("Ваши данные переданы, с вами свяжется наш менеджер");
+		$('.popup').fadeIn();
 		$("form").trigger("reset");
 	});
 	return false;

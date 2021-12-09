@@ -139,6 +139,7 @@ section, .header_menu {
 
 .header_block_text_btn {
   position: relative;
+  display: inline-block;
   margin-top: 3.3rem;
   font-size: 1.22rem;
   padding: 1.2rem 3.27rem;
@@ -711,6 +712,91 @@ section, .header_menu {
   position: relative;
   font-size: 1.111rem;
   color: #e69a64;
+}
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.popup::before {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+.popup_close {
+  position: absolute;
+  top: -4rem;
+  right: -3rem;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+}
+
+.popup_close::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #fff;
+}
+
+.popup_close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #fff;
+}
+
+.popup_content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 44rem;
+  max-width: 44rem;
+  background: #fff;
+  padding: 6.6rem 2.7rem;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.popup_content_title {
+  color: #272D4E;
+  text-align: center;
+  font-size: 2.2rem;
 }
 
 @media (min-width: 992px) {
