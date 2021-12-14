@@ -1,0 +1,71 @@
+@media (max-width: 1350px)
+	html
+		font-size: 14px
+
+	.header
+		padding-bottom: 10rem
+		&_block
+			&_text
+				padding: 
+					left: 2rem
+					right: 1rem
+
+	.warranty
+		&_block 
+			flex-basis: 45%
+
+	.offer
+		&_wrap
+			flex-wrap: wrap
+			justify-content: space-around
+			&::before
+				top: 20%
+		&_block
+			margin-top: 1rem
+			flex-basis: 40%
+			&_img
+				height: 3.5rem
+				width: 3.5rem
+				background-size: 60%
+			&_wrap
+				padding-bottom: 3rem
+
+	.vip
+		padding-bottom: 3rem
+		&_block
+			flex-direction: column
+			align-self: center
+			&_china
+				&_img
+					&_wrap
+						margin: 0
+			&_italy
+				&::before
+					top: 0
+			&_text
+				margin: 0
+				order: 1
+				&::before
+					display: none
+			&_img
+				&_wrap
+					margin-top: 2rem
+					order: 2
+
+	.feedback
+		&_form
+			flex-wrap: wrap
+			&_link
+				flex-basis: 100%
+				margin-bottom: 1.5rem
+				padding-left: 25vw
+				&::before
+					left: calc(24vw - 24px)
+				&_email, &_btn
+
+	.footer
+		&_img
+			width: 35%
+		&::after
+			bottom: 0
+        

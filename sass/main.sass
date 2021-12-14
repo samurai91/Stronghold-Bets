@@ -18,6 +18,8 @@ html
 	font-size: 18px
 body
 	background: #16191C
+img
+	max-width: 100vw
 section
 	display: flex
 	flex-direction: column
@@ -25,13 +27,13 @@ section
 	align-items: center
 .container
 	width: 63vw
-	max-width: 1170px
+	max-width: 65rem
 	display: flex
 	justify-content: space-between
 	align-items: center
 
 .transfer
-    display: block
+	display: block
 
 .lain
 	position: relative
@@ -87,7 +89,7 @@ section
 				right: 0
 				height: 641px
 				width: 63px
-				background: url("../img/header/Ellipse 87.png")		
+				background: url("../img/header/Ellipse 87.png")	no-repeat	
 			&_title
 				font-size: 2.11rem
 				font-weight: 500
@@ -238,7 +240,7 @@ section
 			top: 60%
 			left: 0
 			height: 73.72rem
-			width: 98.7vw
+			width: 100%
 			background: url("../img/offer/Background1.png") no-repeat
 			background-size: 100%
 			z-index: 1
@@ -249,7 +251,6 @@ section
 			border-radius: 10px
 			padding: 1.67rem
 			padding-bottom: 5.6rem
-			min-height: 26.38rem
 		&_img
 			height: 4.44rem
 			width: 4.44rem
@@ -266,6 +267,7 @@ section
 			text-align: center
 		&_text
 			margin-top: 1.4rem
+			padding: 0 1.1rem
 			font-size: 1.1rem
 
 .warranty
@@ -279,7 +281,7 @@ section
 		bottom: 0
 		height: 380px
 		width: 113px
-		background: url("../img/warranty/Vector 53.png")
+		background: url("../img/warranty/Vector 53.png") no-repeat
 	& .container
 		flex-direction: column
 	&_block
@@ -309,7 +311,7 @@ section
 				transform: translateY(-50%)
 				height: 25px
 				width: 25px
-				background: url("../img/warranty/fi-rr-badge.png")
+				background: url("../img/warranty/fi-rr-badge.png") no-repeat
 	&_title
 		font-size: 2.33rem
 
@@ -325,8 +327,8 @@ section
 		top: 36%
 		left: 50%
 		transform: translateX(-50%)
-		height: 1168px
-		width: 1801px
+		height: 64.8rem
+		width: 99.98vw
 		background: url("../img/vip/Lines_dec_background3.png") no-repeat
 	&::after
 		content: ""
@@ -427,7 +429,7 @@ section
 				content: ""
 				position: absolute
 				top: 10%
-				left: -20%
+				left: -2rem
 				height: 24px
 				width: 24px
 				background: url("../img/feedback/01 align center.png") no-repeat
@@ -477,6 +479,7 @@ section
 			transform: translateX(-50%)
 			height: 1px
 			width: 65rem
+			max-width: 61vw
 			background: #2E2E2E
 	&_link
 		position: relative
@@ -542,23 +545,13 @@ section
 			text-align: center
 			font-size: 2.2rem
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import '_hover'			
+@import '_1700-media'
+@import '_1460-media'
+@import '_1350-media'
+@import '_992-media'
+@import '_768-media'
+@import '_576-media'
 
 
 	
-@import '_hover'
